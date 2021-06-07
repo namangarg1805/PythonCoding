@@ -16,10 +16,10 @@ def sum1(n):
     return sums
 
 def sum2(n):
-    return (n*(n+1))/2
+    return (n*(n+1))/2 
 
-%timeit -n10 sum1(10)
-%timeit -n10 sum2(10)
+%timeit -n10 sum1(10) #1.34 micro seconds
+%timeit -n10 sum2(10) #500 nano seconds
 
 #So sum2 function is faster than sum1
 #Note:This also depends on the harware of the system so this method can't be choosen to 
